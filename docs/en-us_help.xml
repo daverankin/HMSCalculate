@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpfile>
+    <title>HMSCalculate User Guide!</title>
+    <version>1.0</version>
+    <last_revised>March 28, 2009</last_revised>
+    <author>Field15, Inc.</author>
+    <copyright>Field15, Inc. 2009</copyright>
+    <topic id="1">
+        <index_title>Welcome to HMSCalculate</index_title>
+        <content>
+            <![CDATA[<p>]]><![CDATA[<b>]]>Welcome to the HMSCalculate User Guide!<![CDATA[</b>]]><![CDATA[<br />]]>
+            Version 1.0<![CDATA[<br />]]>
+            Last updated on March 28, 2009<![CDATA[</p>]]>
+            
+            <![CDATA[<p>]]>Select a help topic to the left to learn more about how to use HMSCalculate.
+            All of the information provided here is also available online at
+            <![CDATA[<a>]]>http://dave.caretcake.com<![CDATA[</a>]]>. Registered users may also visit 
+            <![CDATA[<a>]]>http://www.field15.com<![CDATA[</a>]]> for additional support.<![CDATA[</p>]]>
+        </content>
+    </topic>
+    <topic id="2">
+        <index_title>Overview</index_title>
+        <content>
+            <![CDATA[<p><b>]]>OVERVIEW<![CDATA[</p></b>]]>
+        
+            <![CDATA[<p>]]>HMSCalculate is a tool for adding, subtracting, multiplying, and
+            dividing units of time in hours, minutes, and seconds (HMS).<![CDATA[</p>]]>
+            
+            <![CDATA[<p>]]>The calculator consists of three main parts from top to bottom:
+            1. The input fields to enter hour, minute, second, and integer
+            data.  2.  The input buttons (numbers, clear functions,
+            mathematical functions, etc.).  3. The output field that shows
+            a running a total of your calculations along with all of the
+            entries that have gone into the current total displayed.<![CDATA[</p>]]>
+            
+            <![CDATA[<p>]]>At the top of the calculator you have additional functions under the
+            "File" and "Help" menus.  The "File" menu contains one additional
+            option labeled "Exit" which closes the calculator program.  (You
+            can do the same thing by clicking on your operating system's
+            standard close window button for this program.)  The "Help" menu
+            contains an option labeled "Help" which displays the contents of
+            the HMSCalculate's User Guide and another option called "About"
+            which provides you with general information about the version
+            of the calculator that you are using.<![CDATA[</p>]]>
+        </content>
+    </topic>
+    <topic id="3">
+        <index_title>Entering Data</index_title>
+        <content>
+            <![CDATA[<p><b>]]>ENTERING DATA<![CDATA[</p></b>]]>
+        
+            <![CDATA[<p>]]>When HMSCalculate first starts, you're presented with three
+            input fields separated by colons at the top of the screen.  The
+            first field is for hours, the second is for minutes, and the third
+            is for seconds.  By default, no input field is selected, so use your
+            mouse to click in the field you'd like to enter data for first.
+            HMSCalculate will indicate which field is selected, by showing you
+            a blinking cursor in the selected field.  From there, you can enter
+            data into the field either by using your mouse to click on the
+            number buttons on the screen or by simply typing the numbers directly
+            on your computer's keyboard.<![CDATA[</p>]]>
+            
+            <![CDATA[<p>]]>HMSCalculate accepts both whole numbers and decimals 
+            in the input fields.  That means that both "3" and "3.25" are
+            valid entries in a single input field.  Keep in mind that decimals
+            are understood as fractional amounts of the division of time in which
+            the data is found.  In other words, "3.5" in the hours field is
+            understand as three and one half hours which can also be expressed as
+            three hours and thirty minutes.  "3.5" in the minutes field, would
+            be understood as three and half minutes which can also be expressed
+            as three minutes and thirty seconds.  "3.5" seconds is simply
+            understood as three and one half seconds. A second is the smallest
+            unit of time HMSCalculate operates in; it does not work in milliseconds
+            or smaller.<![CDATA[</p>]]>
+            
+            <![CDATA[<p>]]>In the multiplication and division modes, the three standard input
+            fields (hours, minutes, and seconds) are replaced by a single
+            input field.  This is explained in detail in the multiplication
+            and division sections of this guide.<![CDATA[</p>]]>
+        </content>
+    </topic>
+    <topic id="4">
+        <index_title>Addition</index_title>
+        <content>
+            <![CDATA[<p><b>]]>ADDITION<![CDATA[</p></b>]]>
+        
+            <![CDATA[<p>]]>HMSCalculate is capable of adding hours, minutes, and seconds
+            in two separate formats.<![CDATA[</p>]]>
+            
+            <![CDATA[<p>]]>The first format uses whole numbers only.  For example, if you
+            wanted to add 1 hour, 10 minutes, and 15 seconds to 2 hours,
+            20 minutes, and 15 seconds (01:10:15 + 02:15:00), you could begin by  
+            using your mouse to click in the hours input field to indicate you're
+            going to start entering hour data.  Then, using either your computer's
+            keyboard or the buttons on the screen, you would enter the whole
+            number "1" in the hours field.  Use the tab key on your keyboard
+            or your mouse to move to the minutes field and enter "10".  Finally,
+            use the tab key on your keyboard or your mouse to move to the
+            seconds field and enter "15".  Next press the "+" key on your keyboard
+            or use your mouse to click on the plus button in the HMSCalculate
+            program.  You will immediately notice that the hour, minute, and
+            second input fields have been cleared out, but the output field
+            at the bottom of the program has been updated to say:<![CDATA[</p>]]>
+            
+            <![CDATA[<p>]]>[HMS] 01:10:15<![CDATA[<br />]]>
+            [HOURS] 1.17<![CDATA[<br />]]>
+            [MINUTES] 70.25<![CDATA[<br />]]>
+            [SECONDS] 4215<![CDATA[<br />]]>
+            + 01:10:15<![CDATA[</p>]]>
+            
+            <![CDATA[<p>]]>This indicates that your first data entry has been accepted.  (For a
+            complete description of the output field, please see the "Calculation 
+            Totals" section in this guide.)<![CDATA[</p>]]>
+            
+            <![CDATA[<p>]]>To continue with your calculation, simply follow the same instructions
+            as above, but this time input 2 hours, 15 minutes, and 0 seconds and
+            press the "+" button to see your new totals.<![CDATA[</p>]]>
+            
+            <![CDATA[<p>]]>Entering whole numbers is relatively straightforward and is probably
+            the input format needed for most purposes.  However, sometimes you
+            may also need the ability to add decimals.<![CDATA[</p>]]>
+            
+            <![CDATA[<p>]]>Decimal data indicates a fraction of some unit of time.  For example,
+            "1.5" hours is understood as one-and-a-half hours or one and 50%
+            of an hour, both of which equal one hour and 30 minutes.
+            This means that the value from the sample above, 02:15:00, could
+            also have been entered into the hours field as "2.25" with zeroes
+            in both the minutes and seconds fields, because 25% of one hour is
+            equal to 15 minutes.  In short, 2.25 hours equals 02:15:00.  Moreover,
+            whole and decimal data can even be mixed in different fields at the
+            same time.  Let's say that you wanted to enter the value two
+            hours, thirty minutes, and no seconds.  You could enter that as
+            "2.25" in the hours field, "15" in the minutes field and "0" in the
+            seconds field.  You could even enter it as "2.25" in the hours field,
+            "14.5" in the minutes field and "30" in the seconds field.  Ultimately,
+            all of these ways of entering the input still equal two hours and
+            thirty minutes expressed different ways.<![CDATA[</p>]]>
+            
+            <![CDATA[<p>]]>HMSCalculate is designed to be flexible enough to adapt
+            to a wide range of needs.<![CDATA[</p>]]>
+        </content>
+    </topic>
+    <topic id="5">
+        <index_title>Subtraction</index_title>
+        <content>
+            <![CDATA[<p><b>]]>SUBTRACTION<![CDATA[</p></b>]]>
+        
+            <![CDATA[<p>]]>HMSCalculate is capable of subtracting hours, minutes, and seconds
+            in two separate formats.<![CDATA[</p>]]>
+            
+            <![CDATA[<p>]]>The first format uses whole numbers only.  For example, if you
+            wanted to subtract 1 hour, 10 minutes, and 15 seconds from 2 hours,
+            20 minutes, and 15 seconds (01:10:15 + 02:15:00), you could begin by  
+            using your mouse to click in the hours input field to indicate you're
+            going to start entering hour data.  Then, using either your computer's
+            keyboard or the buttons on the screen, you would enter the whole
+            number "2" in the hours field.  Use the tab key on your keyboard
+            or your mouse to move to the minutes field and enter "15".  Finally,
+            use the tab key on your keyboard or your mouse to move to the
+            seconds field and enter "00".  Next press the "-" key on your keyboard
+            or use your mouse to click on the minus button in the HMSCalculate
+            program.  You will immediately notice that the hour, minute, and
+            second input fields have been cleared out, but the output field
+            at the bottom of the program has been updated to say:<![CDATA[</p>]]>
+            
+            <![CDATA[<p>]]>[HMS] 02:15:00<![CDATA[<br />]]>
+            [HOURS] 2.15<![CDATA[<br />]]>
+            [MINUTES] 135.00<![CDATA[<br />]]>
+            [SECONDS] 8100<![CDATA[<br />]]>
+            + 02:15:00<![CDATA[</p>]]>
+            
+            <![CDATA[<p>]]>This indicates that your first data entry has been accepted.  (For a
+            complete description of the output field, please see the "Calculation 
+            Totals" section in this guide.)<![CDATA[</p>]]>
+            
+            <![CDATA[<p>]]>To continue with your calculation, simply follow the same instructions
+            as above, but this time input 1 hours, 10 minutes, and 15 seconds and
+            press the "-" button to see your new totals.<![CDATA[</p>]]>
+            
+            <![CDATA[<p>]]>Entering whole numbers is relatively straightforward and is probably
+            the input format needed for most purposes.  However, sometimes you
+            may also need the ability to subtract decimals.<![CDATA[</p>]]>
+            
+            <![CDATA[<p>]]>Decimal data indicates a fraction of some unit of time.  For example,
+            "1.5" hours is understood as one-and-a-half hours or one and 50%
+            of an hour, both of which equal one hour and 30 minutes.
+            This means that the value from the sample above, 02:15:00, could
+            also have been entered into the hours field as "2.25" with zeroes
+            in both the minutes and seconds fields, because 25% of one hour is
+            equal to 15 minutes.  In short, 2.25 hours equals 02:15:00.  Moreover,
+            whole and decimal data can even be mixed in different fields at the
+            same time.  Let's say that you wanted to enter the value two
+            hours, thirty minutes, and no seconds.  You could enter that as
+            "2.25" in the hours field, "15" in the minutes field and "0" in the
+            seconds field.  You could even enter it as "2.25" in the hours field,
+            "14.5" in the minutes field and "30" in the seconds field.  Ultimately,
+            all of these ways of entering the input still equal two hours and
+            thirty minutes expressed different ways.<![CDATA[</p>]]>
+            
+            <![CDATA[<p>]]>HMSCalculate is designed to be flexible enough to adapt
+            to a wide range of needs.<![CDATA[</p>]]>
+        </content>
+    </topic>
+    <topic id="6">
+        <index_title>Multiplication</index_title>
+        <content>
+            <![CDATA[<p><b>]]>MULTIPLICATION<![CDATA[</p></b>]]>
+        
+            <![CDATA[<p>]]>HMSCalculate is capable of multiplying hours, minutes, and seconds
+            by whole and decimal numbers.<![CDATA[</p>]]>
+        
+            <![CDATA[<p>]]>By default, hour, minute, and second data is entered into the
+            program through one of three input fields at the top of HMSCalculate.
+            However, when you press the "*" button on your computer's keyboard
+            or click on the times button on the calculator, the three default
+            input fields change into a single input field.  This alternate input
+            field allows you to enter a whole or decimal value to multiply the
+            the current calculation total by. For example, if the calculation
+            total area in HMSCalculate read:<![CDATA[</p>]]>
+            
+            <![CDATA[<p>]]>[HMS] 03:00:00<![CDATA[<br />]]>
+            [HOURS] 3.00<![CDATA[<br />]]>
+            [MINUTES] 180.00<![CDATA[<br />]]>
+            [SECONDS] 10800<![CDATA[<br />]]>
+            + 01:00:00<![CDATA[<br />]]>
+            + 02:00:00<![CDATA[</p>]]>
+            
+            <![CDATA[<p>]]>This would indicate you have already added 1 hour to 2 hours with
+            a current total of 3 hours for the sum of your calculations. (For a
+            complete description of the output field, please see the "Calculation 
+            Totals" section in this guide.)  If you wanted to multiply this total
+            (3 hours) by "10", you would simply press the "*" key on your
+            computer's keyboard or use the mouse to press the multiply button
+            on HMSCalculate, enter "10" into the alternate input field at the
+            top of the program, and continue with your calculations.  The result
+            would look like this:<![CDATA[</p>]]>
+            
+            <![CDATA[<p>]]>[HMS] 30:00:00<![CDATA[<br />]]>
+            [HOURS] 30.00<![CDATA[<br />]]>
+            [MINUTES] 1800.00<![CDATA[<br />]]>
+            [SECONDS] 108000<![CDATA[<br />]]>
+            + 01:00:00<![CDATA[<br />]]>
+            + 02:00:00<![CDATA[<br />]]>
+            x 10<![CDATA[</p>]]>
+            
+            <![CDATA[<p>]]>This same process can be used to multiply by decimal amounts as well,
+            such as "10.5" or "10.25".<![CDATA[</p>]]>
+        </content>
+    </topic>
+    <topic id="7">
+        <index_title>Division</index_title>
+        <content>
+            <![CDATA[<p><b>]]>DIVISION<![CDATA[</p></b>]]>
+        
+            <![CDATA[<p>]]>HMSCalculate is capable of dividing hours, minutes, and seconds
+            by whole and decimal numbers.<![CDATA[</p>]]>
+        
+            <![CDATA[<p>]]>By default, hour, minute, and second data is entered into the
+            program through one of three input fields at the top of HMSCalculate.
+            However, when you press the "/" button on your computer's keyboard
+            or click on the division button on the calculator, the three default
+            input fields change into a single input field.  This alternate input
+            field allows you to enter a whole or decimal value to divide the
+            the current calculation total by. For example, if the calculation
+            total area in HMSCalculate read:<![CDATA[</p>]]>
+            
+            <![CDATA[<p>]]>[HMS] 03:00:00<![CDATA[<br />]]>
+            [HOURS] 3.00<![CDATA[<br />]]>
+            [MINUTES] 180.00<![CDATA[<br />]]>
+            [SECONDS] 10800<![CDATA[<br />]]>
+            + 01:00:00<![CDATA[<br />]]>
+            + 02:00:00<![CDATA[</p>]]>
+            
+            <![CDATA[<p>]]>This would indicate you have already added 1 hour to 2 hours with
+            a current total of 3 hours for the sum of your calculations. (For a
+            complete description of the output field, please see the "Calculation 
+            Totals" section in this guide.)  If you wanted to divide this total
+            (3 hours) by "3", you would simply press the "/" key on your
+            computer's keyboard or use the mouse to press the division button
+            on HMSCalculate, enter "3" into the alternate input field at the
+            top of the program, and continue with your calculations.  The result
+            would look like this:<![CDATA[</p>]]>
+            
+            <![CDATA[<p>]]>[HMS] 1:00:00<![CDATA[<br />]]>
+            [HOURS] 1.00<![CDATA[<br />]]>
+            [MINUTES] 60.00<![CDATA[<br />]]>
+            [SECONDS] 3600<![CDATA[<br />]]>
+            + 01:00:00<![CDATA[<br />]]>
+            + 02:00:00<![CDATA[<br />]]>
+            / 3<![CDATA[</p>]]>
+            
+            <![CDATA[<p>]]>This same process can be used to divide by decimal amounts as well,
+            such as "3.5" or "3.25".<![CDATA[</p>]]>
+        </content>
+    </topic>
+    <topic id="8">
+        <index_title>Calculation Totals</index_title>
+        <content>
+            <![CDATA[<p><b>]]>CALCULATION TOTALS<![CDATA[</p></b>]]>
+        
+            <![CDATA[<p>]]>The calculation totals field at the bottom of HMSCalculate is the
+            heart of the program.  This is where you're able to track your
+            calculation's totals along with everything you've entered into the
+            current calculation.<![CDATA[</p>]]>
+            
+            <![CDATA[<p>]]>The total is displayed in a scrollable area in the format:<![CDATA[</p>]]>
+            
+            <![CDATA[<p>]]>[HMS] <![CDATA[<br />]]>
+            [HOURS] <![CDATA[<br />]]>
+            [MINUTES] <![CDATA[<br />]]>
+            [SECONDS] <![CDATA[<br />]]>
+            . . . input log . . .<![CDATA[</p>]]>
+        
+            <![CDATA[<p>]]>The value represented by the "[HMS]" is the current total for your
+            calculations in the Hour:Minute:Second format.  The "[HOURS]",
+            "[MINUTES]", and "[SECONDS]" lines show the current total for your
+            calculations in one division of time only (hours, minutes, and
+            seconds respectively).  These four elements are always displayed
+            at the top of the calculations total field.  Below them is a log
+            of all the amounts that have gone into the current calculation.
+            The logs indicate the type of calculation and the value that took
+            place.  For example:<![CDATA[</p>]]>
+            
+            <![CDATA[<p>]]>[HMS] 5:00:00<![CDATA[<br />]]>
+            [HOURS] 5.00<![CDATA[<br />]]>
+            [MINUTES] 300.00<![CDATA[<br />]]>
+            [SECONDS] 18000<![CDATA[<br />]]>
+            + 05:00:00<![CDATA[<br />]]>
+            - 01:00:00<![CDATA[<br />]]>
+            x 10<![CDATA[<br />]]>
+            / 8<![CDATA[</p>]]>
+        
+            <![CDATA[<p>]]>This log would indicate that you first entered 5 hours, then
+            subtracted 1 hour.  From there, you multiplied the total by 10 and
+            then divided the result by 8.<![CDATA[</p>]]>
+            
+            <![CDATA[<p>]]>The log is useful for at least two reasons.  The first is to give
+            you an easy way to visually double-check long calculations for
+            typos and mistaken entries.  The secon reason is to give you the
+            ability to edit prior entries without having to re-enter the
+            entire calculation from the beginning.<![CDATA[</p>]]>
+            
+            <![CDATA[<p>]]>To edit an entry in the log, simply click on the entry you would
+            like to edit.  This will cause HMSCalculate to populate the input
+            fields with whatever was entered at that point in time.  (NOTE:
+            HMSCalculate will automatically convert from the default hour,
+            minute, and second input fields to the individual input field
+            required for multiplaction and division if you are editing an
+            entry of either of those types.)  From there, change the original
+            value to the new one and press either the "=" button to end your calculation
+            as-is or press one of the addition, subtraction, multiplication,
+            or division buttons in the program or on your computer's keyboard
+            to edit the log entry and continue with your calculation.<![CDATA[</p>]]>
+            
+        </content>
+    </topic>
+    <topic id="9">
+        <index_title>Other Functions</index_title>
+        <content>
+            <![CDATA[<p><b>]]>OTHER FUNCTIONS<![CDATA[</p></b>]]>
+        
+            <![CDATA[<p>]]>In addition to the input fields, number and calculation type input
+            buttons, and calculation totals field, HMSCalculate also provides
+            you with buttons labeled "C", "AC", and "=".<![CDATA[</p>]]>
+            
+            <![CDATA[<p>]]>The "C" and "AC" stand for Clear and All Clear.  Pressing the "C"
+            button will cause the input fields only to be cleared.  Your overall
+            calculation and calculation totals will remain in-tact.  Pressing
+            the "AC" button will clear the input fields along with the calculation
+            totals field.  In other words, you will completely clear everything
+            related to the current calculation so that you can start a new
+            one from scratch.<![CDATA[</p>]]>
+            
+            <![CDATA[<p>]]>The "=" button simply tells HMSCalculate that you are done with the
+            current calculation.  If there's a value in the input field, it will
+            incorporate that value into the current calculation and show you the
+            final total of your calculation.<![CDATA[</p>]]>
+        </content>
+    </topic>
+    <topic id="10">
+        <index_title>Additional Support</index_title>
+        <content>
+            <![CDATA[<p><b>]]>ADDITIONAL SUPPORT<![CDATA[</p></b>]]>
+        
+            <![CDATA[<p>]]>Some additional support is available online at <![CDATA[<a>]]>http://dave.caretcake.com<![CDATA[</a>]]>.  
+            Registered users may also visit <![CDATA[<a>]]>http://www.field15.com<![CDATA[</a>]]> for official support.<![CDATA[</p>]]>
+        </content>
+    </topic>
+</helpfile>

@@ -1,0 +1,230 @@
+03-28-09
+    * Decided to call it a 1.0 wrap and began sorting three separate downloadable
+    packages:  trialware edition, standard edition, and community edition.
+
+03-26-09
+    * Discovered bug where selecting numbers in an input field (by highlighting
+    them with the mouse) then using the mouse to try to click on new numbers
+    (to indicate you want to overwrite the selected input with the number you
+    just clicked on) caused the new number just to go at the end of the input
+    field and the selected input to stay as-is in place.  Updated
+    Input.buffer() to first check for a selection in the field in focus and
+    overwrite it with the new input if a selection is found.
+    * Discovered bug where in editing output, if you went from editing an
+    HMS value to an integer you were fine, but trying to go from integer to
+    HMS didn't work.  Updated HMSCalculate.pl $results->bind('<ButtonRelease-1>'
+    to resolve the issue.
+    * Added real times_up.png graphic in to Trialware
+    * Revised Trialware.verify_elapsed_time() to actually launch a requested
+    URL in Windows
+
+03-24-09
+    * Did first trial run on OS X and discovered the OS checks were falsely
+    thinking 'Darwin' (as reported by $^O) meant we were running on Windows.
+    Changed regex to /mswin/ anywhere it was simply /win/ in both
+    HMSCalculate.pl and Helpdoc.pm.
+    
+03-21-09
+    * Changed copyrights to Field15, Inc.
+    * Updated info about where to get support in en-us_help.xml
+    * Fixed bug in Helpdoc.transform() but was really more of a patch than
+    permanent fix.  See notes in Helpdoc.pm for more info.
+    * Updated "About" text
+    * Made mw_about() ROText non-scrollable
+    * Modified binding to $results so that users can't click on the first
+    four options (HMS, Hours, Minutes, Seconds)
+    * Created first version of Trialware class
+    * Added $TRIALWARE global to HMSCalculate.pl and if statement check to
+    do trialware "stuff" if $TRIALWARE's set to true
+
+03-12-09
+    * Added $img{mask}{chrome_icon} to fix transparency problem in the window
+    icons.
+    * Modified Helpdoc.new() to accept to additional attributes: ICON and
+    ICON_MASK that can be used to set a transparent window icon on the Helpdoc
+    window, too.
+    * Discovered that the $img{mask}{chrome_icon} fix works on Linux but not
+    on Windows.  (Possibly works on MacOSX, but haven't tested.)
+    * Added mw_version_control() to set OS specific values for things like
+    vertical offset of dropdown menus.
+    * Added mw_set_icon() to generate OS specific code for setting the icon
+    for a specific toplevel element.
+    * Revised call to new Helpdoc object so that it was dependent on the OS
+    HMSCalculate is running on.
+    * Update HMSCalculate.populate() so that setting the icon on the window
+    was determined by the OS HMSCalculate is running on.
+
+02-19-09
+    * Discovered bugs in alpha version and went back to bug fixing.
+    * Had to set "-exportselection=> 0" in $hh_field, $mm_field, and $ss_field
+    to resolve problem where selecting text in those fields unselected any
+    selected values in the $results listbox.
+    * Bound $mw to KeyPress-Return for Windows numpad Enter key.
+    * Revised Input.verify() to accurately handle .'s entered through the numpad.
+    * Bound $integer_field to general <KeyPress> to tie Input.verify() to all
+    requests to enter data into the multiplication and division (integer) field
+    * Changed version to 0.9.0 Beta
+    
+08-04-08
+    * Finished up alpha version of About Screen. Ready to package Windows
+    version.
+
+07-26-08
+    * Fixed bug in mw_clear_all() so that the "AC" button, along with clearing
+    all fields and reseting all values to 0, also made sure that the HMS input
+    fields were displayed instead of the integer input field.
+    * Finished first draft of entire User Guide.
+    * Added $mw->iconfile(chrome_icon.gif)
+    * Added about screen.
+    * Created placeholder for about window through mw_about().  Empty toplevel
+    widget with the right dimensions and right location, but no content so far.
+
+07-25-08
+    * Fixed bug in Helpdoc.load_doc() that was causing the Help TOC to
+    append a complete new TOC to the bottom of the TOC each time the help
+    docs were requested.
+    * Wrote first draft of help documentation for:  Overview, Entering Data,
+    Addition, and Subtraction.
+    * Wrote placeholders for help documentation sections:  Multiplication,
+    Division, Calculation Totals, Other Functions, and Additional support.
+
+07-21-08
+    * Fixed bug in Helpdoc.show() that wasn't allowing a new Helpdoc window to
+    be displayed after the first one was closed by the OS window manager's
+    "close window" button (e.g. the [x] button on most window managers).
+    * Thoroughly re-wrote Helpdoc.transform() to accurately locate line/character
+    indecies to apply style tags to.
+    * Changed Helpdoc window creation in Helpdoc.populate() so that the size
+    of the window is adjustable by the user and only a minimum size of 250 x 250
+    is hardcoded so that the window doesn't entirely disappear on the user.
+    * Un-hardcoded font family and size information in Helpdoc.populate() so that
+    the user's own window manager handles it.
+    * Changed -wrap => 'word' to -wrap => 'none' in Helpdoc.populate() so that
+    line break information came from the XML helpdoc files themselves.  This
+    did two things:  1. It allows for a more relaxed and natural writing
+    style in the XML documents.  2. It allows Helpdoc.transform() to figure
+    out accurately where exactly text tags should be applied by TK for styling.
+
+07-19-08
+    * Refined Helpdoc.transform() to insert line break and other basic styling.
+
+07-17-08
+    * Hardcoded black on white color scheme into Helpdoc class.  (Should
+    make this configurable someday.)
+    * Wrote Helpdoc.transform() and modified Helpdoc.loadpage() to call it.
+    * Began working on how to deal with stylizing content in XML help doc
+    files.  Tried out using <![CDATA[<html tag>]]> and looked into using XSLT.
+
+07-02-08
+    * Chose XML::Simple as the basis for Helpdoc's XML parsing.  (Mostly
+    because it seems to run fine on Linux/Mac/Windows, and because it's
+    supposed to be simple!)
+    * Created Helpdoc->{DATA_SOURCE}, Helpdoc->{DATA}, Helpdoc->{TITLE}, 
+    Helpdoc->{VERSION}, Helpdoc->{LAST_REVISED}, Helpdoc->{AUTHOR},
+    Helpdoc->{COPYRIGHT}, and Helpdoc->{TOC}
+    * Created Helpdoc->load_doc() and Helpdoc->load_page()
+    * Finished writing Helpdoc->populate() including all bindings and default
+    population of TOC and textarea.
+    * Began design of the basic structure of the XML documents Helpdoc is
+    able to read.
+
+06-30-08
+    * Created Helpdoc class.  A generalized Toplevel widget to be used as the
+    container for help documentation style interfaces in any Tk app.
+    * Created Helpdoc->new(), Helpdoc->show(), Helpdoc->hide(),
+    Helpdoc->populate(), and Helpdoc->load_error()
+
+06-28-08
+    * Created mw_manage_menu()
+    * Tied "File" and "Help" graphics to Menu objects
+
+06-27-08
+    * Finished conversion into canvas-based GUI
+    * Added "File" and "Help" menu canvas image objects, but have not bound
+    them to actual menu objects yet.
+
+06-18-08
+    * Began work on menu system but then ran into problems and also realized
+    it'll probably look better to implement the menu system over the real
+    graphical background, in which case, I don't think the 'cascade' method
+    will work.
+    * Created "Record Keeping" section in HMSCalculate.pl
+    * Started moving from prototype widgets to canvas/png widgets
+    * Created bin/docs/images/source project directory structure
+    * Added $BASE_DIR via Find::Bin
+    * Added $BIN_DIR, $DOCS_DIR, $IMAGES_DIR, $SOURCE_DIR
+    * Created mw_load_images()
+    * Copied onMouseO(), onPress(), and onRelease() from Dr. Notes
+    * Got $canvas, $hh, $mm, $ss, and $one_button, $two_button, $three_button
+    converted into png widgets
+
+06-13-08
+    * Bug Fix:  Modified Output.all_clear() to reset the value of
+    Output->{OPERATION} on calls to mw_all_clear().
+    * Added $integer_field, Input->{INTEGER}, and Input->{INTEGER_FIELD} to
+    allow multiplication and division of time by integers
+    * Modified mw_process() to hide/display $hh/$mm/$ss or $input_field as
+    needed
+    * Bug Fix:  Added $output->set_operation($next_operation) to mw_process()
+    to fix the problem with '=' not doing anything when editing something
+    in the output box
+    * Added code for $self->{INTEGER_FIELD} to Input->buffer(), Input->verify(),
+    and Input->clear()
+    * Created Input->integer_input()
+    * Created Output->multiply()
+    * Created mw_multiply()
+    * Created Output->divide()
+    * Created mw_divide()
+
+06-12-08
+    * Created mw_process()
+    * Added Output->{OPERATION} to cache operations (+,-,x,/,=) one calculation
+    in advance to be applied to the next input.  By default a new Output
+    object is instantiated with Output->{OPERATION} set to '+'
+    * Created Output->get_operation() and Output->set_operation
+    * Bound +-*/= and numpad +-*/<ENTER> to $mw
+
+06-11-08
+    * Changed Input.raw_input() to format the HH:MM:SS padded to at least two
+    spaces for better use in Output.cache_input()
+    * Modified Output->{RESULTS_CACHE} to be an array of arrays where index 0
+    is the time in seconds used in calculations and index 1 is the display
+    value in HH:MM:SS.
+    * Re-factored Output.add() and Output.cache_input().  Both working as
+    expected.
+    * Created mw_all_clear()
+    * Created Output.all_clear()
+    * Finished up Outpt.update_totals()
+    * Created mw_clear()
+
+06-03-08
+    * Created Png_test.pl to verify whether PNGs with alpha transparency
+    could be used for the graphics.
+    * Created Output.insert_hms_total(), Output.insert_hour_total(),
+    Output.insert_minute_total(), Output.insert_second_total() to handle
+    inserting totals into the appropriate places in $results
+    * Created Output.add(), Output.cache_input(), Output.update_totals()
+    * Created mw_add()
+    * Created $output->{RESULTS_CACHE}
+    * Had first test run of adding and displaying sum
+
+05-27-08
+    * Created Output class
+    * Created Input.total_in_seconds() method to convert all input to seconds
+    * Created Output.add() method just as a placeholder
+    * Tied '+' button to Output.add() method
+
+05-15-08
+    * Wrote logic to disallow multiple decimal points in input
+    * Wrote $input->clear() method
+    * Wrote $input->all_clear() method
+
+05-14-08
+    * Removed $dec_button and $hms_button (decided they weren't needed)
+    * Created Input class
+    * Wrote logic for numeric input buttons and numeric keyboard input
+
+04-24-08:
+    * Began work on prototype.
+    * Created and packed all main interface features.
+    * Ran for the first time.
