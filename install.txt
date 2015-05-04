@@ -1,18 +1,18 @@
-HMSCalculate Community Edition Installation Guide
-HMSCalculate v1.0
-Last Updated on March 28, 2009
+hmsCalculate Community Edition Installation Guide
+hmsCalculate v1.1
+Last Updated on April 23, 2015
 
 
 [System Requirements]
 
-HMSCalculate is written in Perl and uses the core language, a few additional
+hmsCalculate is written in Perl and uses the core language, a few additional
 modules that were included with this package, and a few more modules that you
 will need to install on your own.  Exactly which additional packages you need is
-dependent on which operating system you intend to run HMSCalculate on.  See
+dependent on which operating system you intend to run hmsCalculate on.  See
 OS-specific instructions below for more details.
 
 At the very least, you will need to be able to run Perl5 and Tk on your
-target machine in order to use the Community Edition of HMSCalculate.
+target machine in order to use the Community Edition of hmsCalculate.
 
 
 [Installation Instructions]
@@ -35,16 +35,16 @@ target machine in order to use the Community Edition of HMSCalculate.
     message like, "Can't locate XML/Simple.pm in @INC" then it's not currently
     installed, and you will need to install it on your own.)
     
-    4. At this point, you should have everything you need to run HMSCalculate,
+    4. At this point, you should have everything you need to run hmsCalculate,
     so unpack the contents of the source files into a local directory.  (This
-    should create a new directory called "HMSCalculate" with all of the source
-    files and support materials needed to build HMSCalculate locally.)
+    should create a new directory called "hmsCalculate" with all of the source
+    files and support materials needed to build hmsCalculate locally.)
     
-    5. Change your working directory to ./HMSCalculate/bin/ and double-check
-    that HMSCalculate.pl is executable by you.
+    5. Change your working directory to ./hmsCalculate/bin/ and double-check
+    that hmsCalculate.pl is executable by you.
     
-    6. Run HMSCalculate.pl via the `perl HMSCalculate.pl` command or the
-    `./HMSCalculate.pl` command.
+    6. Run hmsCalculate.pl via the `perl hmsCalculate.pl` command or the
+    `./hmsCalculate.pl` command.
     
 * Microsoft Windows
 
@@ -55,32 +55,32 @@ target machine in order to use the Community Edition of HMSCalculate.
     2. Ensure that the Tk module has already been installed on your local
     machine.  (Try running `c:\Perl\bin\perl -e "use Tk;"` from an MS-DOS prompt
     if you don't know whether it's already installed.  If you receive a message
-    like, "Can't locate Tk.pm in @INC" then it's not currently installed, and you
-    will need to install it on your own.)
+    like, "Can't locate Tk.pm in @INC" then it's not currently installed, and
+    you will need to install it on your own.)
     
     3. Ensure that the XML::Simple module has already been installed on your
     local machine.  (Try running `c:\Perl\bin\perl -e "use XML::Simple;"` from
     an MS-DOS prompt if you don't know whether it's already installed.  If you
-    receive an error message like, "Can't locate XML/Simple.pm in @INC" then it's
-    not currently installed, and you will need to install it on your own.)
+    receive an error message like, "Can't locate XML/Simple.pm in @INC" then
+    it's not currently installed, and you will need to install it on your own.)
     
     4. Ensure that the Tk::Icon module has already been installed on your
     local machine.  (Try running `c:\Perl\bin\perl -e "use Tk::Icon;"` from
     an MS-DOS prompt if you don't know whether it's already installed.  If you
-    receive an error message like, "Can't locate Tk/Icon.pm in @INC" then it's not
-    currently installed, and you will need to install it on your own.)
+    receive an error message like, "Can't locate Tk/Icon.pm in @INC" then it's
+    not currently installed, and you will need to install it on your own.)
     
-    5. At this point, you should have everything you need to run HMSCalculate,
+    5. At this point, you should have everything you need to run hmsCalculate,
     so unpack the contents of the source files into a local directory.  (This
-    should create a new directory called "HMSCalculate" with all of the source
-    files and support materials needed to build HMSCalculate locally.)
+    should create a new directory called "hmsCalculate" with all of the source
+    files and support materials needed to build hmsCalculate locally.)
     
-    6. If you have already associated .pl files with your local Perl interpretor,
-    change your working directory to \HMSCalculate\bin\ and double click the
-    HMSCalculate.pl file.  If you have not already associated .pl files with
-    your local Perl interpretor, open an MS-DOS prompt, navigate to the
-    \HMSCalculate\bin\ directory and run the command
-    `c:\Perl\bin\perl HMSCalculate.pl`
+    6. If you have already associated .pl files with your local Perl
+    interpretor, change your working directory to \hmsCalculate\bin\ and double
+    click the hmsCalculate.pl file.  If you have not already associated .pl
+    files with your local Perl interpretor, open an MS-DOS prompt, navigate to
+    the \hmsCalculate\bin\ directory and run the command
+    `c:\Perl\bin\perl hmsCalculate.pl`
     
 * Mac OS X:
     
@@ -92,11 +92,11 @@ target machine in order to use the Community Edition of HMSCalculate.
     machine.  (Try running `perl -e 'use Tk;'` from the shell if you don't
     know whether it's already installed.  If you receive a message like, 
     "Can't locate Tk.pm in @INC" then it's not currently installed, and
-    you will need to install it on your own.)  NOTE:  I had difficulty installing
-    Tk on OS X until I ran the standard CPAN shell as root and then forced the
-    install.  My Tk installation hasn't seemed to encounter any problems as a
-    result of the forced install, and HMSCalculate ran without any problems
-    either.
+    you will need to install it on your own.)  NOTE:  I had difficulty
+    installing Tk on OS X until I ran the standard CPAN shell as root and then
+    forced the install.  My Tk installation hasn't seemed to encounter any
+    problems as a result of the forced install, and hmsCalculate ran without any
+    problems either.
     
     3. Ensure that the XML::Simple module has already been installed on your
     local machine.  (Try running `perl -e 'use XML::Simple;'` from the shell if
@@ -104,28 +104,28 @@ target machine in order to use the Community Edition of HMSCalculate.
     message like, "Can't locate XML/Simple.pm in @INC" then it's not currently
     installed, and you will need to install it on your own.)
     
-    4. At this point, you should have everything you need to run HMSCalculate,
+    4. At this point, you should have everything you need to run hmsCalculate,
     so unpack the contents of the source files into a local directory.  (This
-    should create a new directory called "HMSCalculate" with all of the source
-    files and support materials needed to build HMSCalculate locally.)
+    should create a new directory called "hmsCalculate" with all of the source
+    files and support materials needed to build hmsCalculate locally.)
     
-    5. Change your working directory to ./HMSCalculate/bin/ and double-check
-    that HMSCalculate.pl is executable by you.
+    5. Change your working directory to ./hmsCalculate/bin/ and double-check
+    that hmsCalculate.pl is executable by you.
     
-    6. Run HMSCalculate.pl via the `perl HMSCalculate.pl` command or the
-    `./HMSCalculate.pl` command.
+    6. Run hmsCalculate.pl via the `perl hmsCalculate.pl` command or the
+    `./hmsCalculate.pl` command.
 
 
 [Miscellaneous Notes]
 
 MS Windows users will most likely have a more difficult time time than Linux,
-OS X, and Unix users getting HMSCalculate Community edition up and running,
-because they will probably have most of what they need already installed.
-MS Windows users, I recommend looking into ActiveState's ActivePerl and Googling
-for ways to associate .pl with your local Perl interpreter.  This should help
-HMSCalculate seem much more like a native Windows application.  To all users,
-wherever possible, I recommend installing the additional modules (Tk,
-XML::Simple, etc.) via your favorite package manager.  (In the case of
-MS Windows users who have just installed ActivePerl, this means the "Perl
-Package Manager" you just installed.)
+OS X, and Unix users getting hmsCalculate Community edition up and running,
+because the latter three will probably have most of what they need already
+installed on their machines.  MS Windows users, I recommend looking into
+ActiveState's ActivePerl and Googling for ways to associate .pl with your local
+Perl interpreter.  This should help hmsCalculate seem much more like a native
+Windows application.  To all users, wherever possible, I recommend installing
+the additional modules (Tk, XML::Simple, etc.) via your favorite package
+manager.  (In the case of MS Windows users who have just installed ActivePerl,
+this means the "Perl Package Manager" you just installed.)
 

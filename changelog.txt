@@ -1,3 +1,13 @@
+04-23-15
+    * Released updated application as v1.1.
+    * Updated all hardcoded dates to today.
+    * Updated hardcoded URLs to point to new field15 website.
+    * Wrapped calls to MS Windows-specific modules in a test for OS so that
+    those modules are ignored on Linux, making HMSCalculate run on Linux
+    without modification.
+    * Depricated original graphics and moved to "classic" directory -- still
+    to be shipped with product -- then added in all new graphics.
+
 03-28-09
     * Decided to call it a 1.0 wrap and began sorting three separate downloadable
     packages:  trialware edition, standard edition, and community edition.

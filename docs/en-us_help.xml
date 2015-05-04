@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <helpfile>
     <title>HMSCalculate User Guide!</title>
-    <version>1.0</version>
-    <last_revised>March 28, 2009</last_revised>
+    <version>1.1</version>
+    <last_revised>April 23, 2015</last_revised>
     <author>Field15, Inc.</author>
-    <copyright>Field15, Inc. 2009</copyright>
+    <copyright>Field15, Inc. 2015</copyright>
     <topic id="1">
         <index_title>Welcome to HMSCalculate</index_title>
         <content>
             <![CDATA[<p>]]><![CDATA[<b>]]>Welcome to the HMSCalculate User Guide!<![CDATA[</b>]]><![CDATA[<br />]]>
-            Version 1.0<![CDATA[<br />]]>
-            Last updated on March 28, 2009<![CDATA[</p>]]>
+            Version 1.1<![CDATA[<br />]]>
+            Last updated on April 23, 2015<![CDATA[</p>]]>
             
             <![CDATA[<p>]]>Select a help topic to the left to learn more about how to use HMSCalculate.
             All of the information provided here is also available online at

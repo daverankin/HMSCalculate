@@ -3,7 +3,7 @@
 # ------------------------------------------------------------------------------
 #
 #    HMSCalculate
-#    Copyright (C) 2009  Field15, Inc.
+#    Copyright (C) 2015  Field15, Inc.
 #
 #    This program is free software; you can redistribute it and/or
 #    modify it under the terms of the GNU General Public License
@@ -24,8 +24,8 @@
 
 # Import 
 use strict;
-use FindBin;
-my $BASE_DIR = substr $FindBin::Bin, 0, ((length $FindBin::Bin) - 4);
+use File::Spec;
+my $BASE_DIR = substr File::Spec->rel2abs( __FILE__ ), 0, ((length File::Spec->rel2abs( __FILE__ )) - ((length __FILE__) + 5));
 use lib "$BASE_DIR/bin/";
 use Input;
 use Output;
@@ -34,14 +34,17 @@ use Tk;
 use Tk::Canvas;
 use Tk::Photo;
 use Tk::PNG;
+if ($^O =~ /mswin/i) {
+    eval 'use Tk::Icon';
+}
 use subs qw(file_menuitems help_menuitems);
 
 
 # ------------------------------------------------------------------------------
 # Record Keeping
-my $APP_NAME = 'HMSCalculate 1.0';
-my $LAST_UPDATE = 'Last updated on March 28, 2009';
-my $COPYRIGHT = 'Copyright (C) 2009  Field15, Inc.';
+my $APP_NAME = 'HMSCalculate 1.1';
+my $LAST_UPDATE = 'Last updated on April 23, 2015';
+my $COPYRIGHT = 'Copyright (C) 2015  Field15, Inc.';
 
 
 # ------------------------------------------------------------------------------
@@ -75,7 +78,7 @@ my $helpdoc = ($^O =~ /mswin/i) ?
 my $about_window;
 
 # App background
-my $background = $mw->Label(-width=> 284, -height=> 400, -image=> $img{default}{background}, -border=> 0)->place(-x=> 0, -y=>0);
+my $background = $mw->Label(-width=> 284, -height=> 400, -background=> '#efeeee', -border=> 0)->place(-x=> 0, -y=>0);
 
 # App menus
 my @menus;
@@ -100,22 +103,22 @@ $menu_canvas->bind('help_menu', '<ButtonPress>' => sub {mw_manage_menu($help_men
 my $hms_input_frame = $mw->Frame(-width=> 264, -height=> 24)->place(-x=> 10, -y=> 20);
 my $hms_hhframe = $hms_input_frame->Frame(-width=> 84, -height=> 24)->pack(-side=> 'left');
     $hms_hhframe->packPropagate(0);
-    my $hh_field = $hms_hhframe->Entry(-validate=>'focusin', -exportselection=> 0, -validatecommand=>sub { $input->set_focus('hh'); })->pack(-expand=> 1, -fill=> 'x');
-my $hms_c1frame = $hms_input_frame->Frame(-width=> 6, -height=> 24)->pack(-side=> 'left');
+    my $hh_field = $hms_hhframe->Entry(-background=> '#ffffff', -validate=>'focusin', -exportselection=> 0, -validatecommand=>sub { $input->set_focus('hh'); })->pack(-expand=> 1, -fill=> 'x');
+my $hms_c1frame = $hms_input_frame->Frame(-width=> 6, -height=> 24, -background=>'#efeeee')->pack(-side=> 'left');
     $hms_c1frame->packPropagate(0);
-    my $colon1 = $hms_c1frame->Label(-width=> 2, -height=> 10, -image=> $img{default}{colon}, -border=> 0)->pack(-pady=> 6);
+    my $colon1 = $hms_c1frame->Label(-width=> 2, -height=> 10, -background=>'#efeeee', -image=> $img{default}{colon}, -border=> 0)->pack(-pady=> 6);
 my $hms_mmframe = $hms_input_frame->Frame(-width=> 84, -height=> 24)->pack(-side=> 'left');
     $hms_mmframe->packPropagate(0);
-    my $mm_field = $hms_mmframe->Entry(-validate=>'focusin', -exportselection=> 0, -validatecommand=>sub { $input->set_focus('mm') })->pack(-expand=> 1, -fill=> 'x');
-my $hms_c2frame = $hms_input_frame->Frame(-width=> 6, -height=> 24)->pack(-side=> 'left');
+    my $mm_field = $hms_mmframe->Entry(-background=> '#ffffff',-validate=>'focusin', -exportselection=> 0, -validatecommand=>sub { $input->set_focus('mm') })->pack(-expand=> 1, -fill=> 'x');
+my $hms_c2frame = $hms_input_frame->Frame(-width=> 6, -height=> 24, -background=>'#efeeee')->pack(-side=> 'left');
     $hms_c2frame->packPropagate(0);
-    my $colon2 = $hms_c2frame->Label(-width=> 2, -height=> 10, -image=> $img{default}{colon}, -border=> 0)->pack(-pady=> 6);
+    my $colon2 = $hms_c2frame->Label(-width=> 2, -height=> 10, -background=>'#efeeee', -image=> $img{default}{colon}, -border=> 0)->pack(-pady=> 6);
 my $hms_ssframe = $hms_input_frame->Frame(-width=> 84, -height=> 24)->pack(-side=> 'left');
     $hms_ssframe->packPropagate(0);
-    my $ss_field = $hms_ssframe->Entry(-validate=>'focusin', -exportselection=> 0, -validatecommand=>sub { $input->set_focus('ss') })->pack(-expand=> 1, -fill=> 'x');
+    my $ss_field = $hms_ssframe->Entry(-background=> '#ffffff',-validate=>'focusin', -exportselection=> 0, -validatecommand=>sub { $input->set_focus('ss') })->pack(-expand=> 1, -fill=> 'x');
 my $dec_input_frame = $mw->Frame(-width=> 264, -height=> 24)->place(-x=> 10, -y=> 20);
     $dec_input_frame->packPropagate(0);
-    my $integer_field = $dec_input_frame->Entry(-width=> 5, -validate=>'focusin', -validatecommand=>sub { $input->set_focus('integer') })->pack(-expand=> 1, -fill=> 'x');
+    my $integer_field = $dec_input_frame->Entry(-background=> '#ffffff', -width=> 5, -validate=>'focusin', -validatecommand=>sub { $input->set_focus('integer') })->pack(-expand=> 1, -fill=> 'x');
 $dec_input_frame->placeForget();
 
 $input->hour_field(\$hh_field);
@@ -318,7 +321,7 @@ $button_canvas->bind('equals_button', '<Leave>' => sub {onMouseO($equals_button,
 # Output Fields and Object
 my $results_input_frame = $mw->Frame(-width=> 264, -height=> 200)->place(-x=> 10, -y=> 182);
 $results_input_frame->packPropagate(0);
-my $results = $results_input_frame->Scrolled('Listbox', -scrollbars=>'se', -selectmode=>'single', -width=>33)->pack(-side=>'top', -expand=> 1, -fill=> 'both');
+my $results = $results_input_frame->Scrolled('Listbox', -background=>'#ffffff', -scrollbars=>'se', -selectmode=>'single', -width=>33)->pack(-side=>'top', -expand=> 1, -fill=> 'both');
 $output->insert_hms_total($results, '00:00:00');
 $output->insert_hour_total($results, '0');
 $output->insert_minute_total($results, '0');
@@ -753,13 +756,13 @@ sub mw_about {
         $about_window->Label(-width=> 227, -height=> 227, -image=> $img{default}{about_logo}, -border=> 0)->place(-x => 0, -y => 0);
         
         # Insert the text
-        my $about_text_frame = $about_window->Frame(-width=> 227, -height=> 173)->place(-x => 0, -y => 227);
+        my $about_text_frame = $about_window->Frame(-background=>'#ffffff', -width=> 227, -height=> 173)->place(-x => 0, -y => 227);
         $about_text_frame->packPropagate(0);
         #my $about_rotext = $about_text_frame->Scrolled('ROText', -scrollbars=>'e',
         #    -background=> '#ffffff', -relief=> 'flat', -borderwidth=> 0,
         #    -highlightcolor=> '#ffffff', -wrap=> 'word', -font=> [-size => '8'])->pack(-side=>'top', -expand=> 1, -fill=> 'both');
         my $about_rotext = $about_text_frame->ROText(-background=> '#ffffff', -relief=> 'flat', -borderwidth=> 0,
-            -highlightcolor=> '#ffffff', -wrap=> 'word', -font=> [-size => '8'])->pack(-side=>'top', -expand=> 1, -fill=> 'both');
+            -highlightbackground=>'#ffffff', -highlightcolor=> '#ffffff', -wrap=> 'word', -font=> [-size => '8'], -padx=>5)->pack(-side=>'top', -expand=> 1, -fill=> 'both');
         my $about_text =
             qq($APP_NAME\n) .
             qq($LAST_UPDATE\n) .

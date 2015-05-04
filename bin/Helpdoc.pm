@@ -1,29 +1,10 @@
-# ------------------------------------------------------------------------------
-#
-#    Helpdoc.pm
-#    Copyright (C) 2009  Field15, Inc.
-#
-#    This program is free software; you can redistribute it and/or
-#    modify it under the terms of the GNU General Public License
-#    as published by the Free Software Foundation; either version 2
-#    of the License, or (at your option) any later version.
-#
-#    This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU General Public License for more details.
-#
-#    You should have received a copy of the GNU General Public License
-#    along with this program; if not, write to the Free Software
-#    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
-#    02110-1301, USA.
-#
-# ------------------------------------------------------------------------------
-
 package Helpdoc;
 use strict;
 use Tk;
 use Tk::ROText;
+if ($^O =~ /mswin/i) {
+    eval 'use Tk::Icon';
+}
 use XML::Simple qw(:strict);
 
 sub new {
@@ -305,6 +286,6 @@ __END__
 
 KNOWN ISSUES:
 1. Right now, due to transform() algorithm, you're really limited to one tag
-   perl line.  The problem is that the value of $char_index at line 263
+   perl line.  The really problem is that the value of $char_index at line 263
    should be calculated dynamically by the number of tags already found on that
    line.

@@ -1,0 +1,70 @@
+FIELD15 HMSCALCULATE STANDARD EDITION LICENSE AGREEMENT
+
+*IMPORTANT: READ CAREFULLY BEFORE USING THIS PRODUCT*
+
+THIS IS A LICENSE AND NOT AN AGREEMENT FOR SALE. By using and installing the HMSCalculate Software ("Software") or by choosing an "I ACCEPT..." or similarly spirited option at the end of the License you indicate that you have read, understood, and accepted the terms and conditions of the License. IF YOU DO NOT AGREE WITH THE TERMS AND CONDITIONS, YOU SHOULD NOT ATTEMPT TO INSTALL THE Software.  This License Agreement ("License") is made between Field15, Inc. ("Field15") as licensor, and you, as licensee, as of the date of your first use of the Software.
+
+TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND USE
+
+1. You may make unlimited copies of the Software in any medium for the purpose
+of your own personal backup copies.
+
+2. You may install and use copies of the Software on an unlimited number of
+devices that you personally own.
+
+In addition to the two specific scenarios listed in this section above, all
+answers to any questions about the terms and conditions for copying,
+distribution, and use of this Software allowed under this License should be
+guided by the SPIRIT OF THIS LICENSE AGREEMENT ("Spirit") as follows.
+
+The Spirit of this License, as it pertains to the copying, distribution, and
+use of this Software, is guided by the principle that registered users of this
+Software (that is, users who have received acknowledgement, in writing, from
+Field15, one of its affiliates, distributors, or representatives, that they, as
+a unique individual, are recognized as "registered") should have the ability
+to copy this Software as they see fit for their own personal uses.  The
+Standard Edition of this Software (for which this License is intended) is
+not provided for the purpose of distribution or sale to others, because the act
+of registration grants the registered user access to non-material benefits and
+services including but not limited to an official support channel.  There is,
+however, a Community Edition of the Software available somewhere on the
+dave.caretcake website at http://dave.caretcake.com which is provided under
+the terms of the GNU General Public License, and the Community Edition may be
+used in all ways allowable under that license agreement.  
+
+DDISCLAIMER OF WARRANTIES
+
+FIELD15 DOES NOT WARRANT THAT THE SOFTWARE IS FREE FROM BUGS, DEFECTS, ERRORS OR OMISSIONS. THE SOFTWARE IS PROVIDED "AS IS," AND FIELD15, INC., ITS AFFILIATES, SUPPLIERS AND DISTRIBUTORS DISCLAIM ALL REPRESENTATIONS AND WARRANTIES WITH RESPECT TO THE PRODUCT, WHETHER EXPRESS, IMPLIED, OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, ALL WARRANTIES OF MERCHANTABILITY, NON-INFRINGEMENT, TITLE OR FITNESS FOR A PARTICULAR PURPOSE, AND ALL WARRANTIES THAT MAY ARISE FROM COURSE OF DEALING, COURSE OF PERFORMANCE OR USAGE OF TRADE. NO OTHER OPINION, ADVICE, STATEMENT, ADVERTISING, DESCRIPTION OR REPRESENTATION, WHETHER MADE BY A SUPPLIER, DISTRIBUTOR, AGENT OR EMPLOYEE OF FIELD15 OR ITS AFFILIATES, SHALL BE BINDING UPON FIELD15, OR SHALL CHANGE THE TERMS OF THIS LICENSE.
+
+FIELD15, ITS AFFILIATES, SUPPLIERS AND DISTRIBUTORS DO NOT WARRANT THE ACCURACY, OR COMPLETENESS OF THE PRODUCT OR THAT THE PRODUCT OR THE OPERATION THEREOF WILL BE UNINTERRUPTED OR ERROR-FREE, AND HEREBY DISCLAIM ANY AND ALL LIABILITY ON ACCOUNT THEREOF.  YOU ASSUME TOTAL RESPONSIBILITY AND RISK FOR THE DOWNLOADING AND/OR INSTALLATION, USE, OPERATION AND MANAGEMENT OF THE PRODUCT, AND YOUR RELIANCE THEREON. THE FOREGOING LIMITATIONS ON WARRANTIES SHALL BE ENFORCEABLE TO THE EXTENT ALLOWED BY APPLICABLE LAW.  SOME STATES/COUNTRIES DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES OR LIMITATIONS ON HOW LONG AN IMPLIED WARRANTY MAY LAST, SO ONE OR MORE OF THE ABOVE EXCLUSIONS MAY NOT APPLY TO YOU.
+
+IF THE SOFTWARE IS DEFECTIVE FOR ANY REASON, YOU WILL ASSUME THE ENTIRE COST OF ALL NECESSARY REPAIRS OR REPLACEMENTS.
+
+LIMITATION OF LIABILITY
+
+FIELD15 WILL HAVE NO LIABILITY OR OBLIGATION FOR ANY DAMAGES OR REMEDIES, INCLUDING, WITHOUT LIMITATION, THE COST OF SUBSTITUTE GOODS, LOST DATA, LOST PROFITS, LOST REVENUES OR ANY OTHER DIRECT, INDIRECT, INCIDENTAL, SPECIAL, GENERAL, PUNITIVE OR CONSEQUENTIAL DAMAGES, ARISING OUT OF THIS LICENSE OR THE USE OR INABILITY TO USE THE SOFTWARE. IN NO EVENT WILL FIELD15'S TOTAL AGGREGATE LIABILITY (WHETHER IN CONTRACT (INCLUDING FUNDAMENTAL BREACH), WARRANTY, TORT (INCLUDING NEGLIGENCE), PRODUCT LIABILITY, INTELLECTUAL PROPERTY INFRINGEMENT OR OTHER LEGAL THEORY) WITH REGARD TO THE SOFTWARE AND/OR THIS LICENSE EXCEED THE LICENSE FEE PAID BY YOU TO FIELD15. FURTHER, FIELD15 WILL NOT BE LIABLE FOR ANY DELAY OR FAILURE TO PERFORM ITS OBLIGATIONS UNDER THIS LICENSE AS A RESULT OF ANY CAUSES OR CONDITIONS BEYOND FIELD15'S REASONABLE CONTROL.
+
+MISCELLANEOUS PROVISIONS
+
+If the Software was acquired outside the United States, then some elements of
+local law may apply despite the otherwise applicable choice of law set forth
+above.  If you acquired the Product in Canada, you agree to the following:
+The parties to this License have expressly required that the License be drawn
+up in the English language/Les parties aux presentes ont expressement exige que
+la presente convention soient redigees en langue anglaise.
+
+If any provision of this License is found to be unlawful, void, or for any
+reason unenforceable, then that provision shall be deemed severable from this
+License and shall not affect the validity and enforceability of any remaining
+provisions. No waiver by either party of any breach or default hereunder shall
+be deemed to be a waiver of any preceding or subsequent breach or default. Any
+heading, caption or section title contained in this License is inserted only as
+a matter of convenience and in no way defines or explains any section or
+provision hereof.  No change or modification of this license will be valid
+unless authorized by FIELD15.
+
+END OF TERMS AND CONDITIONS
+
+If you have any questions concerning this License, you may contact Field15, Inc.,
+via email at apps@field15.com.
+
